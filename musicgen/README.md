@@ -10,11 +10,11 @@ You can read more about musicgen and its models [here](https://musicgenai.org/mu
 1. Clone this whole project repository
 1. `cd musicgen` to change into this directory
 1. `cp .env.example .env` to create an `.env` file
+1. Run `modal setup` to set up the Modal CLI and auth with your account
+1. Create the `models` volume by running: `modal volume create models`
 1. `./deploy_musicgen.sh` to deploy the app to Modal
 1. Take the resulting URL for your deployment and put it in the `.env` file as `MODAL_APP_URL`
 1. Run `export $(cat .env)` to set the environment variables
-1. Run `modal setup` to set up the Modal CLI and auth with your account
-1. Create the `models` volume by running: `modal volume create models`
 1. Run the client to generate music:
 
 ```bash
